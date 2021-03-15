@@ -30,6 +30,7 @@ public class Employee_dao_Impl implements Employee_dao_i {
 			ps.setString(2,employee.getEmployeeLastName());
 			ps.setDouble(3,employee.getEmployeeSalary());
 			ps.setString(4,employee.getEmployeeDept());
+			System.out.println("Inside Dao after ps");
 
 			int result = ps.executeUpdate();
 			if (result > 0)
